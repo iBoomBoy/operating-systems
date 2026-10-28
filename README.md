@@ -174,7 +174,7 @@ What we saw:
 
 * This code doesn't work in Windows but apart from that it works in all 
   Linux systems and macOS.
-* Very high cutoffs work but are slower, for the reasons above.
+* Very high cutoffs work but are slower due to limitations mentioned above in the section.
 * The given Makefile uses `$?` when linking, so always run `make clean`
   before `make`.
 
