@@ -128,14 +128,15 @@ Speedup = time at cutoff 0 / time at cutoff c.
 | 8      | 1.22 s (10.55x)  | 2.41 s (6.08x)  | 2.83 s (5.40x)  |
 | 9      | -                | 2.23 s (6.57x)  | -               |
 
-* i7-14650HX laptop: 16 cores (8 performance + 8 efficiency), 24 logical
-  processors, Ubuntu on WSL.
-* Ajay's Mac and Yiran's Mac: Apple Silicon MacBooks, macOS.
+Device Used:
+* Ajay's MSI Vector Laptop: Intel i7-14650HX 16 cores (8p + 8e), 24 logical
+  processors. (Windows 11 with Ubuntu WSL)
+* Ajay's MacBook Pro: M2 Pro 10-Core CPU. (macOS 27.2)
+* Yiran's MacBook Air: M3 8-Core CPU. (macOS 27.0.1)
 
 Earlier, cutoff 15 on Ajay's Mac took 7.81 s and 8.68 s (about 1.7-1.9x).
 
-Stress tests with very high cutoffs (i7, WSL). We ran these ourselves and
-asked Claude to help explain the results:
+Stress tests with very high cutoffs (i7, WSL). We ran these test :
 
 | Test                       | Result                        |
 |----------------------------|-------------------------------|
