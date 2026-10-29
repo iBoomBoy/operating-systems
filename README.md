@@ -228,6 +228,22 @@ that part, and I plan to learn them properly before the interview.
 Work split: Yiran wrote `merge()`, `my_mergesort()` and
 `buildArgs()`. Ajay wrote `parallel_mergesort()`. We both tested the code
 and wrote this README.
+## Yiran
+An early difficulty was distinguishing the responsibilities of merge()
+and my_mergesort(). The recursive sorting code was initially placed in
+merge(). Reviewing the function parameters helped clarify that
+my_mergesort() divides and sorts an interval, while merge() combines
+two intervals that are already sorted.
+
+During compilation, make was initially run from the parent directory,
+where no Makefile was present. Changing to the project directory
+resolved this issue. The macOS error.h compilation issue was resolved
+by commenting out the unused include.
+
+The performance results showed that increasing the thread cutoff did
+not always reduce execution time. This highlighted the importance of
+measuring performance instead of assuming that more threads will
+always make the program faster.
 
 ## Sources Used
 
@@ -242,5 +258,6 @@ and wrote this README.
   asked for further stress testing, this includes including running
   sanitizer/Valgrind checks, the `pthread_create` failure test, and 
   explaining the timing results.
-* ChatGPT (Astra - 6) was used for spell correction and grammar correction
+* ChatGPT (Astra - 6) was used for explanations of merge sort, pthread concepts,
+  and memory ownership; spell correction and grammar correction
   in this README file and for comments spell check as well.
