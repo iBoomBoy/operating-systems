@@ -224,11 +224,9 @@ memory mapping" error, which turned out to be a clash with ASLR (address
 randomisation), and running it with `setarch -R` fixed it.
 
 Testing tools like sanitizers were new to me, so I asked Claude for help with
-that part, and I plan to learn them properly before the interview.
-Work split: Yiran wrote `merge()`, `my_mergesort()` and
-`buildArgs()`. Ajay wrote `parallel_mergesort()`. We both tested the code
-and wrote this README.
-## Yiran
+that part.
+
+### Yiran
 An early difficulty was distinguishing the responsibilities of merge()
 and my_mergesort(). The recursive sorting code was initially placed in
 merge(). Reviewing the function parameters helped clarify that
@@ -244,6 +242,13 @@ The performance results showed that increasing the thread cutoff did
 not always reduce execution time. This highlighted the importance of
 measuring performance instead of assuming that more threads will
 always make the program faster.
+
+### Work Split
+
+* Yiran wrote `merge()` and `my_mergesort()`
+* Ajay wrote `parallel_mergesort()` and `buildArgs()`.
+* We both tested the code
+and wrote this README.
 
 ## Sources Used
 
